@@ -1,0 +1,5 @@
+{
+    "mongoURL": "MONGODB_URL",
+    "token": "TOKEN",
+    "prefix": "PREFİX"
+}
