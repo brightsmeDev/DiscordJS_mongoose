@@ -1,7 +1,7 @@
 module.exports = {
     help:{
         name: "help",
-        aliases: new Array("yardım")
+        aliases: ["yardım"]
     }
 }
 
