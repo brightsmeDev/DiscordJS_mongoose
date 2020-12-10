@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const mongoose = require('mongoose')
 const fs  = require('fs')
 const ayarlar = require('./ayarlar.json')
+client.login(ayarlar.token)
 // KOMUT
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
