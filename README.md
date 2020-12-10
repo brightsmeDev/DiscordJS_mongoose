@@ -1,1 +1,1 @@
-# discordJS_mongoose_-rnek
+# DiscordJS Mongoose boş altyapı
