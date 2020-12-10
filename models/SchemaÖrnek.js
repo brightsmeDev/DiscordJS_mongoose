@@ -7,4 +7,4 @@ const ÖrnekSchema = new mongoose.Schema({
     codeming: String
 })
 
-module.exports = mongoose.model('örnek_data', ÖrnekSchema)
+module.exports = mongoose.model('ornek_data', ÖrnekSchema)
