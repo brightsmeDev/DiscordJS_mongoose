@@ -9,14 +9,11 @@ module.exports = {
 const ornekmodel = require('../models/SchemaÖrnek.js');
 exports.run = async (msg) => {
 
-let CodEming = 'https://discord.gg/NvjVQCb'
-
 // Yeni Veri Kaydı;
 
 let DataYeni = new ornekmodel({
     sunucuID: msg.guild.id,
     kullanıcıID: msg.author.id,
-    codeming: CodEming
 })
 DataYeni.save().then(cıktı => {
     console.log('Veri kayıt edildi, işte sonuç \n '+cıktı+' ')
@@ -24,13 +21,13 @@ DataYeni.save().then(cıktı => {
 
 
 // Veri Çekme;
-const veri = ornekmodel.findOne({ 
+const veri = await ornekmodel.findOne({ 
     sunucuID: msg.guild.id 
  })
 
  // 2. yol
 
-ornekmodel.findOne({ 
+await ornekmodel.findOne({ 
     sunucuID: msg.guild.id 
  }, (err, data) => {
      if (err) console.error(err);
